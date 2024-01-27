@@ -1,7 +1,6 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -23,6 +22,7 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import MesAnnonces from './pages/MesAnnonces';
 import Notification from './pages/Notification';
+import Home from './pages/Home';
 
 setupIonicReact();
 
