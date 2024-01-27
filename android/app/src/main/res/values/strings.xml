@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ventevoiture</string>
+    <string name="title_activity_main">ventevoiture</string>
+    <string name="package_name">ionic.ventevoiture</string>
+    <string name="custom_url_scheme">ionic.ventevoiture</string>
+</resources>

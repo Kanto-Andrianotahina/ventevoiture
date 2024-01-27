@@ -21,6 +21,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import MesAnnonces from './pages/MesAnnonces';
+import Notification from './pages/Notification';
 
 setupIonicReact();
 
@@ -33,6 +35,21 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
+        </Route>
+        <Route exact path="/mesannonces">
+          <MesAnnonces />
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/mesannonces" />
+        </Route>
+
+
+
+        <Route exact path="/notification">
+          <Notification />
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/notification" />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

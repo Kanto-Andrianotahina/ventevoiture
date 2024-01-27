@@ -1,17 +1,15 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage} from '@ionic/react';
 import './Home.css';
 import NavbarContainer from '../components/NavbarContainer';
-import HeadbarContainer from '../components/HeadbarContaint';
 import AnnonceContainer from '../components/AnnonceContainer';
 
-const Home: React.FC = () => {
+const MesAnnonces: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
-          <HeadbarContainer/>
         </IonHeader>
         <AnnonceContainer />
       </IonContent>
@@ -20,4 +18,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default MesAnnonces;
