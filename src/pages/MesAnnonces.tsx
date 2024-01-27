@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage} from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/react';
 import './Home.css';
 import NavbarContainer from '../components/NavbarContainer';
 import AnnonceContainer from '../components/AnnonceContainer';
@@ -6,14 +6,15 @@ import AnnonceContainer from '../components/AnnonceContainer';
 const MesAnnonces: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        <IonHeader>
+            <IonToolbar>
+                <IonTitle style={{color:'Black'}}>Vos annonces</IonTitle>
+            </IonToolbar>
         </IonHeader>
-        <AnnonceContainer />
-      </IonContent>
-      <NavbarContainer />
+        <IonContent fullscreen>
+            <AnnonceContainer />
+        </IonContent>
+        <NavbarContainer />
     </IonPage>
   );
 };
