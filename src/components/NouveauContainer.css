@@ -1,0 +1,30 @@
+/* NouveauContainer.css */
+
+.containt {
+    padding: 20px;
+}
+
+/* .input, */
+.select {
+    width: 100%;
+    border: 1px solid #ccc;  /*Ajoutez la bordure aux IonInput et IonSelect*/
+    border-radius: 5px; /* Ajoutez un peu de bordure arrondie si vous le souhaitez */
+    padding: 8px; /* Ajoutez un peu de rembourrage pour l'espace interne */
+    margin-bottom: 15px; /* Ajoutez un peu d'espace en bas */
+}
+
+
+.select div[slot="label"] {
+    /* Styles spécifiques au label du IonSelect */
+    font-weight: bold;
+}
+
+.item{
+    margin-left: -15px;
+}
+.button{
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+    margin-left: 70px;
+}

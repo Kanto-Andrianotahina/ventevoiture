@@ -23,6 +23,7 @@ import './theme/variables.css';
 import MesAnnonces from './pages/MesAnnonces';
 import Notification from './pages/Notification';
 import Home from './pages/Home';
+import NouveauAnnonce from './pages/NouveauAnnonce';
 
 setupIonicReact();
 
@@ -43,7 +44,12 @@ const App: React.FC = () => (
           <Redirect to="/mesannonces" />
         </Route>
 
-
+        <Route exact path="/newannonce">
+          <NouveauAnnonce />
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/newannonce" />
+        </Route>
 
         <Route exact path="/notification">
           <Notification />
